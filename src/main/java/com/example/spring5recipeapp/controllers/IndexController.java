@@ -1,15 +1,9 @@
 package com.example.spring5recipeapp.controllers;
 
 import com.example.spring5recipeapp.Service.RecipeService;
-import com.example.spring5recipeapp.models.Category;
-import com.example.spring5recipeapp.models.UnitOfMeasure;
-import com.example.spring5recipeapp.repositories.CategoryRepository;
-import com.example.spring5recipeapp.repositories.UnitOfMeasureRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.Optional;
 
 @Controller
 public class IndexController {
