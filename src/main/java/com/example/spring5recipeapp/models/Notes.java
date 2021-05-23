@@ -1,6 +1,5 @@
 package com.example.spring5recipeapp.models;
 
-
 import javax.persistence.*;
 
 @Entity

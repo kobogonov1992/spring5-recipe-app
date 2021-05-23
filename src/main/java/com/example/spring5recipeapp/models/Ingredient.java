@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 
 @Entity
 public class Ingredient {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -15,7 +16,7 @@ public class Ingredient {
     private UnitOfMeasure uom;
 
     @ManyToOne
-    private Recipe recipe;
+    private  Recipe recipe;
 
     public Long getId() {
         return id;
@@ -23,6 +24,14 @@ public class Ingredient {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public UnitOfMeasure getUom() {
+        return uom;
+    }
+
+    public void setUom(UnitOfMeasure uom) {
+        this.uom = uom;
     }
 
     public String getDescription() {
